@@ -1,0 +1,26 @@
+#cart-icon{
+    position: relative;
+    display: flex;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(142,170,185);
+    padding-top: 12px;
+    padding-left: 10px;
+    font-size: 15px;
+    font-family: "Poppins", serif;
+}
+#cart-icon .cart-icon-count{
+    position: absolute;
+    top: 0;
+    right: -8px;
+    display: flex;
+    width: 17px;
+    height: 16px;
+    font-size: 12px;
+    background-color: rgb(120, 144, 156);
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-radius: 50%;
+    visibility: hidden;
+}

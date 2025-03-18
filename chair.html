@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <div class="container-fluid bg-container border-adjust">
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
+          
+           
+              <a class="navbar-brand mt-4 ms-0" href="home.html">
+                <img src="images/logo06-free-img.png" alt="logo">
+              </a>
+          
+              <div class="d-lg-none ms-auto me-2">
+                <span class="me-2">£0.00</span>
+                <a href="">
+                  <i class="fa fa-shopping-cart"></i>
+                </a>
+              </div>
+          
+        
+              <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+            
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-2">
+                  <a class="nav-link " href="allproducts.html">All Products</a>
+                  <a class="nav-link" href="sofa.html">Sofa</a>
+                  <a class="nav-link active" href="chair.html">Chair</a>
+                  <a class="nav-link" href="table.html">Table</a>
+                </div>
+          
+                <div class="navbar-nav ms-auto d-none d-lg-flex">
+                  <a class="nav-link" href="about.html">About Us</a>
+                  <a class="nav-link" href="account.html">My Account</a>
+                  <span class="navbar-link ">£0.00</span>
+                  <!-- <a class="navbar-link" href="cart.html">
+                    <i class="fa fa-shopping-cart"></i>
+                  </a> -->
+                  <div id="cart-icon">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="cart-icon-count"></span>
+                  </div>
+                  <!-- <span class="cart-icon-span">0</span> -->
+                </div>
+              </div>
+            </div>
+          </nav>
+          
+      
+    
+        <div class=" bg-white px-5 pt-5 pb-5">
+            <div class="d-flex justify-content-between align-items-center mt-4 mb-3">
+                <button class="btn btn-filter"><i class="fa-solid fa-list"></i> Filter</button>
+                <div class="dropdown">
+                    <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Default Sorting
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Default Sorting</a></li>
+                        <li><a class="dropdown-item" href="#">Sort by popularity</a></li>
+                        <li><a class="dropdown-item" href="#">Sort by average rating</a></li>
+                        <li><a class="dropdown-item" href="#">Sort by Latest</a></li>
+                        <li><a class="dropdown-item" href="#">Price: Low to High</a></li>
+                        <li><a class="dropdown-item" href="#">Price: High to Low</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cart">
+                <h2 class="cart-title">Shopping Cart</h2>
+                <div class="cart-content">
+                    <!-- <div class="cart-box">
+                        <img src="images/armchair-300x300.jpg" alt="" class="cart-img">
+                        <div class="cart-detail">
+                            <h2 class="cart-product-title">Armchair</h2>
+                            <span class="cart-price">£62.50</span>
+                            <div class="cart-quantity">
+                                <button id="decrement">-</button>
+                                <span class="number">1</span>
+                                <button class="increment">+</button>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-trash cart-remove"></i>
+                    </div> -->
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">£0</div>
+                </div>
+                <button class="btn-buy">Buy Now</button>  
+                <i class="fa-solid fa-xmark" id="cart-close"></i>         
+            </div>
+
+             <div class="row mt-5">
+
+                <div class="col-md-6 col-lg-3 product-box">
+                    <div class="product-card position-relative">
+                        <img src="images/armchair-300x300.jpg" class="img-box" alt="Product">
+                        <div class="hover-icons">
+                            <i class="fas fa-shopping-cart add-cart"></i>
+                            <span class="view-icon"><i class="fas fa-eye"></i></span>
+                        </div>
+
+                        <div class="img-content">
+                            <div class="product-title">Armchair</div>
+                            <h3>Armchair with Head Rester</h3>
+                            <p class="price"><strong>£62.50</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3  product-box">
+                    <div class="product-card position-relative">
+                        <img src="images/chair-300x300.jpg" class="img-box" alt="Product">
+                        <div class="hover-icons">
+                            <i class="fas fa-shopping-cart add-cart"></i>
+                            <span class="view-icon"><i class="fas fa-eye"></i></span>
+                        </div>
+
+                        <div class="img-content">
+                            <div class="product-title">Chair</div>
+                            <h3>Fancy Single Chair</h3>
+                            <p class="price"> <strong>£199.00</strong> </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-6 col-lg-3 product-box">
+                    <div class="product-card position-relative">
+                        <img src="images/brown-sofa.jpg" class="img-box" alt="Product">
+                        <div class="hover-icons">
+                            <i class="fas fa-shopping-cart add-cart"></i>
+                            <span class="view-icon"><i class="fas fa-eye"></i></span>
+                        </div>
+
+                        <div class="img-content">
+                            <div class="product-title">Chair</div>
+                            <h3>Orange Recliner with Leg Rest</h3>
+                            <p class="price"> <strong> £419.00</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-3 product-box">
+                    <div class="product-card">
+                        <img src="images/round-stool-300x300.jpg" class="img-box" alt="Product">
+                        <div class="hover-icons">
+                            <i class="fas fa-shopping-cart add-cart"></i>
+                            <span class="view-icon"><i class="fas fa-eye"></i></span>
+                        </div>
+
+                        <div class="img-content">
+                            <div class="product-title">Chair</div>
+                            <h3>Round Short Leg Stool/Chair</h3>
+                            <p class="price"> <strong> £229.00</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+                <div class="row mt-5 mb-5">
+
+                    <div class="col-md-6 col-lg-3 product-box">
+                        <div class="product-card position-relative">
+                            <img src="images/luxury-chair-300x300.jpg" class="img-box" alt="Product">
+                            <div class="hover-icons">
+                                <i class="fas fa-shopping-cart add-cart"></i>
+                                <span class="view-icon"><i class="fas fa-eye"></i></span>
+                            </div>
+    
+                            <div class="img-content">
+                                <div class="category ">Chair</div> 
+                                <h3>Vintage Luxury Chair</h3>
+                                <p class="price"> <strong> £429.00</strong></p>
+                            </div>
+                        </div>
+                    </div>
+            
+    
+                    <div class="col-md-6 col-lg-3 product-box">
+                        <div class="product-card position-relative">
+                            <span class="sale-badge">Sale!</span>
+                            <img src="images/couch-300x300.jpg" class="img-box" alt="Product">
+                            <div class="hover-icons">
+                                <i class="fas fa-shopping-cart add-cart"></i>
+                                <span class="view-icon"><i class="fas fa-eye"></i></span>
+                            </div>
+    
+                            <div class="img-content">
+                                <div class="product-title">Chair</div> 
+                                <h3> Wingback Yellow Couch</h3>
+                                <p class="price"><del class="old-price">£192.00</del> <strong>£186.00</strong> </p>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="col-md-6 col-lg-3 product-img">
+                        <div class="product-card position-relative">
+                            <img src="images/wooden-rocking-chair-300x300.jpg" class="img-box" alt="Wooden Rocking Chair">
+                            <div class="hover-icons">
+                                <i class="fas fa-shopping-cart add-cart"></i>
+                                <span class="view-icon"><i class="fas fa-eye"></i></span>
+                            </div>
+    
+                           <div class="img-content">
+                            <div class="product-title">Armchair</div>
+                            <h3>Wooden Rocking Chair</h3>
+                            <p class="price"><strong>£169.00</strong></p>
+                           </div> 
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 bg-white"></div> 
+                </div>
+        </div>
+        
+        <div class="bg-white connect-section">
+            <div class="connect-content">
+                <h4 class="last-heading">Connect with Us</h4>
+                <div class="social-icons">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-google"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+
+          <div class="bg-white footer-container">
+            <div class="container">
+                <div class="row g-4">
+
+                    <div class="col-sm-12 col-md-6 col-lg-3 foot-list">
+                        <h4>Product Links</h4>
+                        <ul>
+                            <li><a href="#">All Products</a></li>
+                            <li><a href="#">Sofa</a></li>
+                            <li><a href="#">Chair</a></li>
+                            <li><a href="#">Table</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 foot-list">
+                        <h4>Chairs</h4>
+                        <ul>
+                            <li><a href="#">Chair</a></li>
+                            <li><a href="#">Armchair</a></li>
+                            <li><a href="#">Recliner</a></li>
+                            <li><a href="#">Stool</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 foot-list">
+                        <h5 class="footer-h5">Table</h5>
+                        <ul>
+                            <li><a href="#">Study table</a></li>
+                            <li><a href="#">Table</a></li>
+                            <li><a href="#">Computer table</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 foot-list">
+                        <h5 class="footer-h5">Have Questions?</h5>
+                        <button type="button" class="btn3 btn-light mt-3">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bottom-footer w-100 p-3" style="background-color: #333; color: white;">
+            <div class="container-fluid">
+                <div class="row mt-3 mx-0 d-flex flex-column flex-md-row align-items-center justify-content-between">
+                    <div class="col-12 col-md-auto text-center text-md-start">
+                        <p class="mb-0  font-size">Copyright © 2025 Furniture Store</p>
+                    </div>
+                    <div class="col-12 col-md-auto text-center text-md-end">
+                        <p class="mb-0">Powered by Furniture Store</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        
+      
+    </div>
+
+    <script src="cart.js"></script>
+
+</body>
+
+</html>
